@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Amatic SC;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 400px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #f3f3f3;
+            border: 2px solid saddlebrown;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Enter the following fields</h3>
+    <br>
+    <form class="form-container">
+        Book Author <input type="text" id="author" name="author">
+        Book Name <input type="text" id="name" name="name">
+        Book Year <input type="text" id="year" name="year">
+        <br>
+        <button formaction="/add"> Add Book </button>
+        <br>
+        <button formaction="/return"> Return </button>
+    </form>
+</div>
+
+</body>
+</html>
