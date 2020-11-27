@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,10 +34,13 @@
 <div class="container">
     <h3>Choose the following</h3>
     <br>
+    <form action="#" th:action="@{/getAnswerOne}">
+        <button type="submit" th:name="action" th:value="review"> Review the book list </button>
+        <br>
+        <button type="submit" th:name="action" th:value="add"> Add to the book list </button>
 
-    <button formaction="/reviewBook"> Review the book list </button>
-    <br>
-    <button formaction="/enter-book"> Add to the book list </button>
+    </form>
+
 </div>
 
 </body>
