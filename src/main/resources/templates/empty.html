@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List List</title>
 </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1> Getting Results From Form</h1>
+
+<p th:text="${author}"></p>
+<p th:text="${name}"></p>
+<p th:text="${year}"></p>
 
 </body>
 </html>
